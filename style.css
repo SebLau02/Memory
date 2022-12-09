@@ -1,0 +1,64 @@
+*,
+::before,
+::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Gemunu+Libre:wght@200;500&family=Silkscreen&display=swap');
+body{
+	background: limegreen;
+}
+header{
+	text-align: center;
+	font-family: 'Comforter Brush', cursive;
+}
+#compteur{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px auto;
+	height: auto;
+	width: auto;
+}
+.grid{
+	position: relative;
+	display:grid;
+	grid-template-columns:200px 200px 200px 200px;
+	grid-gap:5px;
+	transition: all 0.3s ease;
+	transform-style: preserve-3d;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item10, #item11, #item12 {
+	width:200px;
+	height:200px;
+	transition: all 0.3s ease;
+	transform-style: preserve-3d;
+}
+.front1, .front2, .front3, .front4, .front5, .front6, .front7, .front8, .front9, .front10, .front11, .front12 {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	/*background: green;*/
+	backface-visibility: hidden;
+	transform: rotateY(-180deg);
+	border-radius: 20%;
+}
+.back1, .back2, .back3, .back4, .back5, .back6, .back7, .back8, .back9, .back10, .back11, .back12 {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	backface-visibility: hidden;
+	border-radius: 20%;
+
+}
+.rotate{
+	transform: rotateY(180deg);
+}

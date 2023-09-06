@@ -7,123 +7,125 @@
 		<title>Memory</title>
 	</head>
 	<body>
-		<section>
-			<h1>Memory</h1>
-			<p id="consigne">
-				Tentez de gagner avec le moins d'essais possible
-			</p>
+		<div class="global-container">
+			<section class="text-section">
+				<h1>Memory</h1>
+				<p id="consigne">
+					Tentez de gagner avec le moins d'essais possible
+				</p>
 
-			<div id="compteur">
-				<p>Nombre de coups:</p>
-				<span id="nombre-coup">0</span>
+				<div id="compteur">
+					<p>Nombre de coups:</p>
+					<span id="nombre-coup">0</span>
 
-				<p>Reccord:</p>
-				<span id="reccord"></span>
-				<button id="recommencer" onclick="recommencer()">
-					Recommencer
-				</button>
-			</div>
-		</section>
-
-		<article id="container">
-			<div class="grid">
-				<div class="item" id="card1" onclick="afficher(this.id)">
-					<img class="front front1" />
-					<img
-						class="back back1"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
+					<p>Reccord:</p>
+					<span id="reccord"></span>
+					<button id="recommencer" onclick="recommencer()">
+						Recommencer
+					</button>
 				</div>
+			</section>
 
-				<div class="item" id="card2" onclick="afficher(this.id)">
-					<img class="front front2" />
-					<img
-						class="back back2"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+			<article id="container">
+				<div class="grid">
+					<div class="item" id="card1" onclick="afficher(this.id)">
+						<img class="front front1" />
+						<img
+							class="back back1"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card3" onclick="afficher(this.id)">
-					<img class="front front3" />
-					<img
-						class="back back3"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card2" onclick="afficher(this.id)">
+						<img class="front front2" />
+						<img
+							class="back back2"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card4" onclick="afficher(this.id)">
-					<img class="front front4" />
-					<img
-						class="back back4"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card3" onclick="afficher(this.id)">
+						<img class="front front3" />
+						<img
+							class="back back3"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card5" onclick="afficher(this.id)">
-					<img class="front front5" />
-					<img
-						class="back back5"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card4" onclick="afficher(this.id)">
+						<img class="front front4" />
+						<img
+							class="back back4"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card6" onclick="afficher(this.id)">
-					<img class="front front6" />
-					<img
-						class="back back6"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card5" onclick="afficher(this.id)">
+						<img class="front front5" />
+						<img
+							class="back back5"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card7" onclick="afficher(this.id)">
-					<img class="front front7" />
-					<img
-						class="back back7"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card6" onclick="afficher(this.id)">
+						<img class="front front6" />
+						<img
+							class="back back6"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card8" onclick="afficher(this.id)">
-					<img class="front front8" />
-					<img
-						class="back back8"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card7" onclick="afficher(this.id)">
+						<img class="front front7" />
+						<img
+							class="back back7"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card9" onclick="afficher(this.id)">
-					<img class="front front9" />
-					<img
-						class="back back9"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card8" onclick="afficher(this.id)">
+						<img class="front front8" />
+						<img
+							class="back back8"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card10" onclick="afficher(this.id)">
-					<img class="front front10" />
-					<img
-						class="back back10"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card9" onclick="afficher(this.id)">
+						<img class="front front9" />
+						<img
+							class="back back9"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card11" onclick="afficher(this.id)">
-					<img class="front front11" />
-					<img
-						class="back back11"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
-				</div>
+					<div class="item" id="card10" onclick="afficher(this.id)">
+						<img class="front front10" />
+						<img
+							class="back back10"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 
-				<div class="item" id="card12" onclick="afficher(this.id)">
-					<img class="front front12" />
-					<img
-						class="back back12"
-						src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
-					/>
+					<div class="item" id="card11" onclick="afficher(this.id)">
+						<img class="front front11" />
+						<img
+							class="back back11"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
+
+					<div class="item" id="card12" onclick="afficher(this.id)">
+						<img class="front front12" />
+						<img
+							class="back back12"
+							src="https://media.istockphoto.com/vectors/fruits-cartoon-color-illustration-vector-id1168914806"
+						/>
+					</div>
 				</div>
-			</div>
-		</article>
+			</article>
+		</div>
 
 		<script src="script.js"></script>
 	</body>

@@ -5,71 +5,116 @@
 	margin: 0;
 	padding: 0;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Gemunu+Libre:wght@200;500&family=Silkscreen&display=swap");
+
 body {
+	font-size: 62.5%;
+}
+
+.global-container {
 	background: linear-gradient(45deg, #4adb8b, #5acc0a);
 	font-family: "Comforter Brush", cursive;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding: 2vw;
+	min-height: 100vh;
 }
-section {
+.text-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	text-align: center;
+	max-width: 300px;
+	padding: 0.5vw;
+	border: 1px solid #8c8c8c;
+	border-radius: 1vw;
+	background: #4adb8b;
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.text-section h1 {
+	font-size: clamp(1.6em, 3vw, 2.5em);
 }
 #consigne {
-	margin-bottom: 10vh;
+	margin-bottom: 5vw;
 }
 #compteur {
 	display: flex;
 	justify-content: center;
-	text-align: center;
 	flex-direction: column;
-	margin-bottom: 25vh;
+	margin-bottom: 5vw;
+}
+#consigne,
+#compteur {
+	font-size: clamp(1.2em, 2vw, 1.6em);
 }
 #recommencer {
 	width: auto;
-	height: 5vh;
+	min-height: 35px;
+	max-height: 45px;
+	height: 5vw;
 	border-radius: 10px;
 	border: 1px solid black;
 	margin: 10px 0 0 0;
+	padding: 5px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#recommencer:active {
+	transform: translateY(2px);
+	box-shadow: none;
 }
 #container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	width: auto;
 }
 .grid {
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(4, 200px);
+	grid-template-columns: repeat(4, auto);
 	grid-gap: 5px;
 }
 .item {
-	width: 200px;
-	height: 200px;
+	max-width: 200px;
+	max-height: 200px;
+	min-width: 70px;
+	min-height: 70px;
+	width: 15vw;
+	height: 15vw;
 	transition: all 0.3s ease;
 	transform-style: preserve-3d;
 }
 .front {
 	position: absolute;
-	height: 200px;
-	width: 200px;
+	height: 100%;
+	width: 100%;
 	backface-visibility: hidden;
 	transform: rotateY(-180deg);
 	border-radius: 20%;
 }
 .back {
 	position: absolute;
-	height: 200px;
-	width: 200px;
+	height: 100%;
+	width: 100%;
 	backface-visibility: hidden;
 	border-radius: 20%;
 }
 .rotate {
 	transform: rotateY(180deg);
+}
+
+/* media queries */
+
+@media screen and (max-width: 758px) {
+	.global-container {
+		flex-direction: column;
+	}
+	#compteur {
+		margin-bottom: 0;
+	}
 }

@@ -2,6 +2,12 @@
 
 ## Fr
 
+### Description
+
+Jeux de mémory avec possibilité de recommancer et mémoriser le meilleur score.
+
+### Détail
+
 Petit jeu memory pour pratiquer le javascript.
 J'ai utilisé backface visibility pour obtenir des cartes avec du contenu sur les deux faces.
 On créer 1 conteneur pour la carte avec 2 éléments images à l'intérieur comme face. On superposer les deux faces puis on applique backface-visibility: hidden sur les deux puis on rotate l'une d'elle de 180deg. Maintenant notre carte est prête, on a juste à appliquer un fonction onclick qui permet de rotate de 180deg notre carte.
@@ -16,3 +22,10 @@ Backface visibility is the key in this project. One container as card with 2 ele
 One of the challenge in this project is the function that randomly place the cards on the game board. To do it I placed fruits pictures in an array (first) and I create another array (second), then I generate a number between 0 and the first array length with Math.random. Then I check if this picture is not already present in the second array, if it is not present I push the picture at index generated number in the second array then repeat the process until the second array has the same pictures as the first array. Now in the second array, the pictures are placed randomly.
 
 Visit it [here](https://seblau02.github.io/Memory/)
+
+### Technologies: HTML, CSS, Javascript Vanilla
+
+### Images
+
+<img src="illustration/memory1-2.png" alt="recto" width="800">
+<img src="illustration/memory2-2.png" alt="verso" width="800">

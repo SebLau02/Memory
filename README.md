@@ -6,7 +6,7 @@
 
 Jeux de mémory avec possibilité de recommancer et mémoriser le meilleur score.
 
-### Détail
+### Détails
 
 Petit jeu memory pour pratiquer le javascript.
 J'ai utilisé backface visibility pour obtenir des cartes avec du contenu sur les deux faces.

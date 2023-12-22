@@ -13,7 +13,7 @@ J'ai utilisé backface visibility pour obtenir des cartes avec du contenu sur le
 On créer 1 conteneur pour la carte avec 2 éléments images à l'intérieur comme face. On superposer les deux faces puis on applique backface-visibility: hidden sur les deux puis on rotate l'une d'elle de 180deg. Maintenant notre carte est prête, on a juste à appliquer un fonction onclick qui permet de rotate de 180deg notre carte.
 Un des défis de ce projet est de placer aléatoirement les cartes sur le plateau de jeu. Pour ça j'ai créer deux tableau, le premier qui contient les images puis le second pour accueillir les images choisis dans le premier aléatoirement. Ensuite je génère un nombre aléatoire avec Math.random, puis je vérifie si l'image n'est pas présente dans le second tableau, s'il ne l'est pas alors je push l'image à index du nombre généré dans le second tableau, puis je répète le processus jusqu'à ce que le second tableau ai les mêmes images que le premier. Maintenant le second tableau à les images du premier tableau mais placé de manière aléatoire.
 
-Le jeu est dispo [ici](https://seblau02.github.io/Memory/)
+Je vous laisse le découvrir [ici](https://seblau02.github.io/Memory/)
 
 ## En
 
